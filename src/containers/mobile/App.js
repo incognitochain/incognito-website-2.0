@@ -15,6 +15,7 @@ import { withRouter } from "react-router";
 import { BrowserRouter as Router, Switch,  Route, Link } from "react-router-dom";
 import AboutUs from './AboutUs'; 
 import Dex from '../../components/dex/mobilehome';
+import Faq from '../../components/faq/mobilehome';
 
 import Wallet from '../../components/wallet/mobilehome';
 import Events from '../../components/events/mobilehome';
@@ -72,7 +73,7 @@ class App extends React.Component{
            <Flex.Item>
               <Link to="/" onClick={this.handleOk} > 
                       {/* <Avatar size={40} style={{position:'absolute',top:'32px',marginLeft:'20px',backgroundColor:'#000000'}} />    */}
-                      <img src={logo}  style={{width:'128px',position:'absolute',top:'32px',marginLeft:'16px'}} />
+                      <img src={logo}  style={{width:'128px',position:'absolute',top:'32px',marginLeft:'10px'}} />
               </Link> 
             </Flex.Item>
               <Flex.Item style={{textAlign:'right', marginRight:'20px'}}>
@@ -92,6 +93,9 @@ class App extends React.Component{
             <Route path="/quest" exact  >
               <Events />   
             </Route>
+            <Route path="/faq" exact  >
+              <Faq />    
+            </Route>
             <Route path="/about-you" exact>
                 <Checking/>
             </Route>
@@ -110,8 +114,9 @@ class App extends React.Component{
 
                 <Menu className="topMenu"  style={{marginTop:'60px'}}  mode="vertical" onSelect={this.handleOk}   selectedKeys={[selected]}> 
                     <Menu.Item key="/home"><Link className="dex" to={'/'}>pDEX</Link></Menu.Item>
-                    <Menu.Item key="/quest"><Link className="dex" to={'/quest'}>Quest</Link></Menu.Item>
+                    {/* <Menu.Item key="/quest"><Link className="dex" to={'/quest'}>Quest</Link></Menu.Item> */}
                     <Menu.Item key="/wallet"> <Link className="about-you" to={'/wallet'}>Wallet</Link></Menu.Item>
+                    <Menu.Item key="/faq"><Link className="faq" to={'/faq'}>FAQs</Link></Menu.Item>
                     <Menu.Item key="/about-you"> <Link className="about-you" to={'/about-you'}>About you</Link></Menu.Item>
                     <li class="ant-menu-item"><a className="about-us" href='https://we.incognito.org/'>About us</a> </li>
                 </Menu>
