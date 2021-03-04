@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import DesktopApp from './containers/desktop/App';
 import MobileApp from './containers/mobile/App';
 //import { Provider } from 'react-redux';
+
 import {
   BrowserView,
   MobileView,

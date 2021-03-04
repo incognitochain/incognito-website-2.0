@@ -7,7 +7,8 @@ import Dex from '../../components/dex/index';
 import Wallet from '../../components/wallet/index';
 import Events from '../../components/events/index';
 import Checking from '../../components/checking/index';
-import './App.css'; 
+import Faq from '../../components/faq/index';
+import './App.scss'; 
 import WAValidator from '@swyftx/api-crypto-address-validator';
 import {INCO_CHAIN} from '../../services/const';
 import GA from '../../services/GaEvents';
@@ -34,7 +35,7 @@ class App extends React.Component{
   render(){ 
     //console.log(this.props);
     const selected = (this.props.location.pathname =="/" ? '/home' : this.props.location.pathname);
-    //console.log("selected",selected);
+    console.log("selected",selected);
     return ( 
         <Layout className="layout" >
           <Header className="header-cus">
@@ -48,8 +49,8 @@ class App extends React.Component{
               <Col  span={12} style={{ textAlign:"right", padding:'0'}} > 
                 <Menu className="topMenu" mode="horizontal" selectedKeys={[selected]} style={{marginTop:'20px'}}> 
                 <Menu.Item key="/home"><Link className="dex" to={'/'}>pDEX</Link></Menu.Item>
-                <Menu.Item key="/quest"><Link className="dex" to={'/quest'}>Quest</Link></Menu.Item>
                 <Menu.Item key="/wallet"><Link className="dex" to={'/wallet'}>Wallet</Link></Menu.Item>
+                <Menu.Item key="/faq"><Link className="dex" to={'/faq'}>FAQs</Link></Menu.Item>
                 <Menu.Item key="/about-you"> <Link className="about-you" to={'/about-you'}>About you</Link></Menu.Item> 
                 <Menu.Item key="/about-us"> <a className="about-us" href='https://we.incognito.org/'>About us</a>  </Menu.Item>
                 </Menu>
@@ -63,6 +64,9 @@ class App extends React.Component{
                 </Route>
                 <Route path="/quest" exact  >
                   <Events />   
+                </Route> 
+                <Route path="/faq" exact  >
+                  <Faq />   
                 </Route> 
                 <Route path="/wallet" exact  >
                   <Wallet />   

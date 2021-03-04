@@ -70,7 +70,7 @@ class SlideItem extends React.Component{
 
   return (  
         <div>
-            <Row justify="end"  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+            <Row justify="end" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 <Col span={12} className="slideRight">
                     <Carousel 
                      ref={node => {

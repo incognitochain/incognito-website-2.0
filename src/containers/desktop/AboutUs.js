@@ -4,7 +4,7 @@ import logo from '../../assets/logo2x.png';
 import searchicon from '../../assets/retry.png';
 import axios from 'axios';
 import {Row,Col, Avatar, Input, Button, Layout, Menu, Breadcrumb } from 'antd';
-import './App.css'; 
+import './App.scss'; 
 import WAValidator from '@swyftx/api-crypto-address-validator';
 import {INCO_CHAIN} from '../../services/const';
 import GA from '../../services/GaEvents';
