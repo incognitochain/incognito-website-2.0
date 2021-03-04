@@ -18,6 +18,7 @@ import wallet3 from '../../assets/Wallet/Wallet42x.png';
 import telegram from '../../assets/telegram.png';
 import twitter from '../../assets/twitter.png';
 
+import rediticon from '../../assets/redit.png';
 import pageShield from '../../assets/pageshield.png';
 import pageSwrap from '../../assets/pageswap.png';
 import pageFee from '../../assets/pagefee.png';
@@ -246,7 +247,8 @@ class SlideItem extends React.Component{
                         <img src={telegram}  style={{width:'20px'}} />
                     </a>
                     <a  href="https://twitter.com/incognitochain"  className="news-text-botton"> <img style={{width:'20px'}}  src={twitter} /></a>    
-                   
+                    <a  href="https://www.reddit.com/r/IncognitoChain/"  className="news-text-botton"> <img style={{width:'20px'}}  src={rediticon} /></a>    
+                    
                     </div>
             </Row>
 

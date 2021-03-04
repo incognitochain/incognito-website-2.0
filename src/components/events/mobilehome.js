@@ -21,6 +21,7 @@ import dex32 from '../../assets/Trade/DEX32x.png';
 import telegram from '../../assets/telegram.png';
 import twitter from '../../assets/twitter.png';
 
+import rediticon from '../../assets/redit.png';
 import { Flex, WhiteSpace } from 'antd-mobile';
 import { Carousel } from 'antd';
 
@@ -240,7 +241,8 @@ class MobileHome extends React.Component{
                         <img src={telegram}  style={{width:'20px'}} />
                     </a>
                     <a  href="https://twitter.com/incognitochain"  className="news-text-botton"> <img style={{width:'20px'}}  src={twitter} /></a>    
-                   
+                    <a  href="https://www.reddit.com/r/IncognitoChain/"  className="news-text-botton"> <img style={{width:'20px'}}  src={rediticon} /></a>    
+                    
                     </div>
 
                 </Row> 

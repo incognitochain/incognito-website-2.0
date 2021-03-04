@@ -85,11 +85,14 @@ class App extends React.Component{
 
           <Switch>
             <Route path="/" exact  >
-              <Dex />   
+              <Wallet />   
             </Route>
             <Route path="/wallet" exact  >
               <Wallet />   
             </Route>
+            <Route path="/dex" exact  >
+              <Dex />   
+            </Route> 
             <Route path="/quest" exact  >
               <Events />   
             </Route>
@@ -113,9 +116,9 @@ class App extends React.Component{
               >
 
                 <Menu className="topMenu"  style={{marginTop:'60px'}}  mode="vertical" onSelect={this.handleOk}   selectedKeys={[selected]}> 
-                    <Menu.Item key="/home"><Link className="dex" to={'/'}>pDEX</Link></Menu.Item>
+                    <Menu.Item key="/dex"><Link className="dex" to={'/dex'}>pDEX</Link></Menu.Item>
                     {/* <Menu.Item key="/quest"><Link className="dex" to={'/quest'}>Quest</Link></Menu.Item> */}
-                    <Menu.Item key="/wallet"> <Link className="about-you" to={'/wallet'}>Wallet</Link></Menu.Item>
+                    <Menu.Item key="/home"> <Link className="about-you" to={'/'}>Wallet</Link></Menu.Item>
                     <Menu.Item key="/faq"><Link className="faq" to={'/faq'}>FAQs</Link></Menu.Item>
                     <Menu.Item key="/about-you"> <Link className="about-you" to={'/about-you'}>About you</Link></Menu.Item>
                     <li class="ant-menu-item"><a className="about-us" href='https://we.incognito.org/'>About us</a> </li>

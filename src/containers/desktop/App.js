@@ -48,8 +48,8 @@ class App extends React.Component{
               </Col>
               <Col  span={12} style={{ textAlign:"right", padding:'0'}} > 
                 <Menu className="topMenu" mode="horizontal" selectedKeys={[selected]} style={{marginTop:'20px'}}> 
-                <Menu.Item key="/home"><Link className="dex" to={'/'}>pDEX</Link></Menu.Item>
-                <Menu.Item key="/wallet"><Link className="dex" to={'/wallet'}>Wallet</Link></Menu.Item>
+                <Menu.Item key="/dex"><Link className="dex" to={'/dex'}>pDEX</Link></Menu.Item>
+                <Menu.Item key="/home"><Link className="dex" to={'/'}>Wallet</Link></Menu.Item>
                 <Menu.Item key="/faq"><Link className="dex" to={'/faq'}>FAQs</Link></Menu.Item>
                 <Menu.Item key="/about-you"> <Link className="about-you" to={'/about-you'}>About you</Link></Menu.Item> 
                 <Menu.Item key="/about-us"> <a className="about-us" href='https://we.incognito.org/'>About us</a>  </Menu.Item>
@@ -59,7 +59,10 @@ class App extends React.Component{
           </Header> 
           <Content className="content">    
             <Switch>
-                <Route path="/" exact  >
+             <Route path="/" exact  >
+                  <Wallet />   
+                </Route>
+                <Route path="/dex" exact  >
                   <Dex />   
                 </Route>
                 <Route path="/quest" exact  >
