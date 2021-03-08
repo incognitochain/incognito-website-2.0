@@ -97,7 +97,7 @@ export default function Faq() {
                     <img style={{width:'65px'}} src={searchResult}/>
                     <p className='no-result'>No results found.. yet.</p>
                     <p className='txt-community'>The Incognito knowledge base is bigger than this page.</p>
-                    <a target='_blank' href='https://we.incognito.org/c/users/user-help'>Bring your question to the community.</a>
+                    <a target='_blank' href='https://we.incognito.org/t/start-here-all-the-info-you-need-in-one-place/2976'>Bring your question to the community.</a>
                 </div>
             )
         }
