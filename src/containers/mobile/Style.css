@@ -1,14 +1,14 @@
-@import '~antd-mobile/dist/antd-mobile.css';  
-/* @import "~slick-carousel/slick/slick.css"; 
+@import '~antd-mobile/dist/antd-mobile.css';
+/* @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css"; */
 
 @media screen and (max-width: 760px) {
 
   body {
-    font-family:SF-Pro-Display-Regular; 
+    font-family:SF-Pro-Display-Regular;
     font-size:15px;
     margin: auto;
-    
+
   }
   p{
       line-height: 1.6;
@@ -68,7 +68,7 @@ layout
 }
 .gray{
   color:#959599;
-} 
+}
 .orange{
   color:#F27200;
 }
@@ -87,39 +87,39 @@ layout
 .ant-layout-footer{
   margin-top: 40px;
 }
- 
+
 /*
 typing animation ...
 */
 
 
-.typing{ 
+.typing{
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  animation: type 1s steps(60, end);  
-} 
+  animation: type 1s steps(60, end);
+}
  .typing:nth-child(2){
   animation: type2 2s steps(60, end);
-  
-} 
+
+}
 .typing:nth-child(3){
   animation: type2 2s steps(60, end);
-}  
+}
 
-@keyframes type{ 
-  from { width: 0;  } 
-} 
+@keyframes type{
+  from { width: 0;  }
+}
 
 @keyframes type2{
   0%{width: 0;  }
   50%{width: 0; }
-  100%{ width: 100;   } 
-} 
+  100%{ width: 100;   }
+}
 
 @keyframes blink{
   to{opacity: .0;}
-} 
+}
 ::selection{
   background: black;
 }
@@ -130,12 +130,12 @@ img.arrow {
 
 .flex-container {
   margin: 0px;
-  background: white;  
+  background: white;
   padding: 15px;
 }
-.bigTitle{ 
+.bigTitle{
   font-family: SF-Pro-Display-Bold;
-  font-size: 35px; 
+  font-size: 35px;
   letter-spacing: 0;
   text-align: center;
   margin: 30px;
@@ -193,7 +193,7 @@ img.arrow {
 
 /*Box-news */
 .box-header{
- 
+
   font-family: SF-Pro-Display-Heavy;
   font-size: 20px;
   color: #000000;
@@ -223,7 +223,7 @@ img.arrow {
     height: 12px;
     margin-top: 8px;
     margin-left: 10px;
-} 
+}
 .pageHomeImage{
   width: 100%;
 }
@@ -243,7 +243,7 @@ img.arrow {
 .ant-drawer-content-wrapper {
   width: 100%!important;
   box-shadow: none!important;
-}  
+}
 .ant-drawer-mask{
   background:transparent;
 }
@@ -257,7 +257,7 @@ img.arrow {
   border-right: none;
 }
 .topMenu a{
-  font-size: 16px;  
+  font-size: 16px;
 }
 .ant-layout-header .ant-menu{
   float: right;
@@ -271,7 +271,7 @@ img.arrow {
 }
 .ant-menu-vertical > .ant-menu-item-selected a , .ant-menu-vertical > .ant-menu-item-selected a:hover{
   color :black;
-  
+
 }
 .ant-menu-vertical > .ant-menu-item-selected a, .ant-menu-vertical > .ant-menu-item-selected a:hover {
   color: black;
@@ -292,7 +292,7 @@ img.arrow {
 .ant-menu-vertical > .ant-menu-item-selected a.dex {
   /* background: #000000; */
   border-radius: 15px;
-} 
+}
 
 
 
@@ -345,7 +345,7 @@ img.arrow {
   font-family: SF-Pro-Display-Bold;
   font-size: 15px;
   color: #1D1D1F;
-  line-height: 25px; 
+  line-height: 25px;
 
 }
 .mb-input-search{
@@ -370,4 +370,90 @@ img.arrow {
 .typewriter{
   padding: 0px 0px;
 }
+}
+
+.mob-app-logo {
+  width: 158px;
+  top: 30px;
+  margin-top: 20px;
+}
+
+.mob-wallet-title {
+  font-family: SF-Pro-Display-Medium;
+  font-size: 64px;
+  color: #000000;
+  text-align: left;
+  line-height: 72px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.mob-wallet-content {
+  font-family: SF-Pro-Display-Regular;
+  font-weight: 400;
+  font-size: 18px;
+  color: #9C9C9C;
+  text-align: left;
+  line-height: 27px;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.mob-more-text {
+  color: #4C8BF5;
+  font-family: SF-Pro-Display-Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: 8px;
+}
+.mob-more-text:hover {
+  color: #4C8BF5;
+}
+
+.mob-more-icon {
+  margin-left: 7px;
+}
+
+.mob-wrap-category {
+  margin-top: 54px;
+}
+
+.mob-category-title {
+  font-family: SF-Pro-Display-Medium;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.mob-category-content {
+  font-family: SF-Pro-Display-Regular;
+  font-size: 14px;
+  color: #9C9C9C;
+  margin-bottom: 0;
+}
+
+.mob-btn-start {
+  cursor: pointer;
+  margin-top: 48px;
+  background: #4C8BF5;
+  border-radius: 8px;
+  height: 50px;
+  width: 253px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: SF-Pro-Display-Medium;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.mob-line {
+  border: 1px solid #F0F0F0;
+}
+
+.mob-img-phone {
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
 }
