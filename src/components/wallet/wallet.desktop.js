@@ -50,7 +50,7 @@ const Wallet = () => {
                     </Row>
                     <div style={{ marginTop: 49 }}>
                         <a target="_blank" className="more-text" href="https://we.incognito.org/">
-                            Learn more
+                            Learn about Incognito
                             <LinkMoreIcon className="more-icon"/>
                         </a>
                     </div>
