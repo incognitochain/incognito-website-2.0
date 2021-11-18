@@ -4,7 +4,7 @@ import searchicon from '../../assets/retry.png';
 import axios from 'axios';
 import {Row,Col, Avatar, Input, Button, Layout, Menu, Breadcrumb } from 'antd';
 import Dex from '../../components/dex/index';
-import Wallet from '../../components/wallet/wallet.destop';
+import Wallet from '../../components/wallet/wallet.desktop';
 import Events from '../../components/events/index';
 import Checking from '../../components/checking/index';
 import Faq from '../../components/faq/index';

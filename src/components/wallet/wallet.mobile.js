@@ -27,10 +27,6 @@ const Wallet = () => {
                         <h4 className="mob-wallet-content">
                             Commission-free trading and total anonymity.<br/>
                             Your keys, your money, your privacy.
-                            {/*<a target="_blank" className="mob-more-text">*/}
-                            {/*    Learn more*/}
-                            {/*    <LinkMoreIcon className="mob-more-icon"/>*/}
-                            {/*</a>*/}
                         </h4>
                     </div>
                     <Button className="mob-btn-start" onClick={onOpenInstall}>
@@ -52,6 +48,12 @@ const Wallet = () => {
                             <p className="mob-category-content">Validators</p>
                         </Col>
                     </Row>
+                    <div style={{ marginTop: 49 }}>
+                        <a target="_blank" className="more-text" href="https://we.incognito.org/">
+                            Learn more
+                            <LinkMoreIcon className="more-icon"/>
+                        </a>
+                    </div>
                 </Col>
                 <img className="mob-img-phone" src={phone} alt="phone"/>
             </Row>

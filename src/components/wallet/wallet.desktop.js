@@ -6,6 +6,7 @@ import {
     isMacOs,
     isIOS,
 } from "react-device-detect";
+import LinkMoreIcon from "../icons/icon.linkMore";
 
 const Wallet = () => {
     const onOpenInstall = () => {
@@ -47,6 +48,12 @@ const Wallet = () => {
                             <p className="category-content">Validators</p>
                         </Col>
                     </Row>
+                    <div style={{ marginTop: 49 }}>
+                        <a target="_blank" className="more-text" href="https://we.incognito.org/">
+                            Learn more
+                            <LinkMoreIcon className="more-icon"/>
+                        </a>
+                    </div>
                 </Col>
                 <img className="img-phone" src={phone} alt="phone"/>
             </Row>
