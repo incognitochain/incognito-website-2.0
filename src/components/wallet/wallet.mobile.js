@@ -1,10 +1,9 @@
 import React, {memo} from 'react';
-import {Col, Row} from "antd";
+import {Col, Row, Button} from "antd";
 import logo from '../../assets/incognito-name.png';
 import LinkMoreIcon from "../icons/icon.linkMore";
 import phone from "../../assets/phone.png";
 import {isIOS, isMacOs} from "react-device-detect";
-import {Button} from "antd-mobile";
 
 const Wallet = () => {
     const onOpenInstall = () => {
@@ -18,7 +17,7 @@ const Wallet = () => {
         <div>
             <Row justify="space-between" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 <Col>
-                    <img src={logo} className="mob-app-logo"  alt="logo"/>
+                    <img src={logo} className="mob-app-logo" alt="logo"/>
                     <p className="mob-wallet-title">
                         Buy and sell <br/>
                         crypto privately.
@@ -34,12 +33,12 @@ const Wallet = () => {
                     </Button>
                     <Row className="mob-wrap-category" justify="space-between">
                         <Col>
-                            <p className="mob-category-title">$500 M</p>
+                            <p className="mob-category-title">$550 M</p>
                             <p className="mob-category-content">Trading volume</p>
                         </Col>
                         <div className="mob-line"/>
                         <Col className="">
-                            <p className="mob-category-title">1 M</p>
+                            <p className="mob-category-title">1,000,000</p>
                             <p className="mob-category-content">Anonymous trades</p>
                         </Col>
                         <div className="mob-line"/>
@@ -48,7 +47,7 @@ const Wallet = () => {
                             <p className="mob-category-content">Validators</p>
                         </Col>
                     </Row>
-                    <div style={{ marginTop: 49 }}>
+                    <div style={{ marginTop: 24 }}>
                         <a target="_blank" className="more-text" href="https://we.incognito.org/">
                             Learn about Incognito
                             <LinkMoreIcon className="more-icon"/>

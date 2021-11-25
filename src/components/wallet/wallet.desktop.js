@@ -36,11 +36,11 @@ const Wallet = () => {
                     </Button>
                     <Row className="wrap-category">
                         <Col>
-                            <p className="category-title">$500 M</p>
+                            <p className="category-title">$550 M</p>
                             <p className="category-content">Trading volume</p>
                         </Col>
                         <Col className="center-horizontal">
-                            <p className="category-title">1 M</p>
+                            <p className="category-title">1,000,000</p>
                             <p className="category-content">Anonymous trades</p>
                         </Col>
                         <Col>
@@ -48,7 +48,7 @@ const Wallet = () => {
                             <p className="category-content">Validators</p>
                         </Col>
                     </Row>
-                    <div style={{ marginTop: 49 }}>
+                    <div style={{ marginTop: 44 }}>
                         <a target="_blank" className="more-text" href="https://we.incognito.org/">
                             Learn about Incognito
                             <LinkMoreIcon className="more-icon"/>
