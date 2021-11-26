@@ -43,7 +43,7 @@ const Wallet = () => {
                         </Col>
                         <div className="mob-line"/>
                         <Col>
-                            <p className="mob-category-title">1,900</p>
+                            <p className="mob-category-title">2,000</p>
                             <p className="mob-category-content">Validators</p>
                         </Col>
                     </Row>
