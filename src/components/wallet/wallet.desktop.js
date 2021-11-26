@@ -44,7 +44,7 @@ const Wallet = () => {
                             <p className="category-content">Anonymous trades</p>
                         </Col>
                         <Col>
-                            <p className="category-title">1,900</p>
+                            <p className="category-title">2,000</p>
                             <p className="category-content">Validators</p>
                         </Col>
                     </Row>
