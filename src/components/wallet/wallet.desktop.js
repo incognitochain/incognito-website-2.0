@@ -16,9 +16,17 @@ const Wallet = () => {
         }
         window.open(url, '_blank').focus();
     }
+
+    React.useEffect(() => {
+        console.log('DIMENSIONS::::', window.innerWidth,  window.innerHeight)
+    }, [])
+
     return (
-        <div>
-            <Row justify="space-between" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+            <Row
+                justify="space-between"
+                gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+                style={{ minHeight: '100vh' }}
+            >
                 <Col>
                     <img src={logo} className="app-logo"  alt="logo"/>
                     <p className="wallet-title">
@@ -57,7 +65,6 @@ const Wallet = () => {
                 </Col>
                 <img className="img-phone" src={phone} alt="phone"/>
             </Row>
-        </div>
     );
 };
 

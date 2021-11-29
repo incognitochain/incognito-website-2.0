@@ -22,6 +22,19 @@ body {
   font-family: SF-Pro-Display-Regular;
   background: white;
 }
+
+@media only screen and (max-width: 3000px) {
+  .layout {
+    max-width: 1600px;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .layout {
+    max-width: 1204px;
+  }
+}
+
 .content{
   padding: 0px;
   background:"#ffffff";
@@ -828,8 +841,9 @@ input:focus {
 
 .img-phone {
   margin-top: 40px;
-  width: 340px;
-  height: auto;
+  width: calc(90vh * 358 / 720);
+  height: 90vh;
+  object-fit: contain;
 }
 
 
