@@ -16,7 +16,7 @@ import free from "../../assets/Wallet/free.png";
 import shield from "../../assets/Wallet/shield.png";
 import LinkMoreIcon from "../icons/icon.linkMore";
 
-const APP_CATEGORY = [
+export const APP_CATEGORY = [
     {
         icon: user,
         title: 'Total anonymity',
