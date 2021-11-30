@@ -81,7 +81,7 @@ const Wallet = () => {
                                 <Col className="wrap-shield-first-section">
                                     <p className="shield-content">$540 M</p>
                                     <p className="shield-subcontent">Trading volume</p>
-                                </Col>p
+                                </Col>
                                 <Col>
                                     <p className="shield-content">1,000,000</p>
                                     <p className="shield-subcontent">Anonymous trades</p>
