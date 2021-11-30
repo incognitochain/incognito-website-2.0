@@ -14,27 +14,6 @@ body {
   height: 100%;
 }
 
-.layout {
-  padding: 0px 50px;
-  max-width: 1204px;
-  min-width: 1000px;
-  margin: auto;
-  font-family: SF-Pro-Display-Regular;
-  background: white;
-}
-
-@media only screen and (max-width: 3000px) {
-  .layout {
-    max-width: 1600px;
-  }
-}
-
-@media only screen and (max-width: 2000px) {
-  .layout {
-    max-width: 1204px;
-  }
-}
-
 .content{
   padding: 0px;
   background:"#ffffff";
@@ -750,14 +729,29 @@ input:focus {
       }
     }
   }
-
 }
 
+.layout {
+  padding-left: 116px;
+  padding-right: 116px;
+  margin: auto;
+  font-family: SF-Pro-Display-Regular;
+  background: white;
+}
 
 .app-logo {
-  width: 98px;
-  top: 30px;
-  margin-top: 100px;
+  width: 121px;
+  margin-top: 80px;
+}
+
+.wrap-home {
+  min-height: 100vh;
+}
+
+.category-content {
+  font-family: SF-Pro-Display-Regular;
+  color: #9C9C9C;
+  margin-bottom: 0;
 }
 
 .wallet-title {
@@ -770,6 +764,260 @@ input:focus {
   margin-bottom: 0;
 }
 
+.app-link {
+  width: 170px;
+  height: 50px;
+  margin-right: 16px;
+}
+.wrap-shield-box {
+  background: #F9F9F9;
+  border-radius: 16px;
+  align-items: center;
+}
+.shield-title {
+  color: #757575;
+  margin-bottom: 0;
+}
+
+.shield-content {
+  font-family: SF-Pro-Display-Medium;
+  color: #000000;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.shield-subcontent {
+  margin-bottom: 0;
+  color: #9C9C9C;
+}
+
+.wrap-link {
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 3000px) {
+  .layout {
+    padding-left: 320px;
+    padding-right: 320px;
+    margin: auto;
+    font-family: SF-Pro-Display-Regular;
+    background: white;
+  }
+  .img-phone {
+    width: calc((100vh - 160px) * 358 / 720);
+    height: calc(100vh - 160px);
+    object-fit: contain;
+    margin-top: 80px;
+  }
+  .app-logo {
+    width: 161px;
+    margin-top: 100px;
+  }
+  .wallet-title {
+    font-family: SF-Pro-Display-Medium;
+    font-size: 80px;
+    text-align: left;
+    line-height: 88px;
+    margin-top: 24px;
+  }
+  .wrap-app-link {
+    //margin-top: 40px;
+  }
+  .app-link{
+    width: 202px;
+    height: 60px;
+    margin-right: 16px;
+    margin-top: 40px;
+  }
+  .wrap-category {
+    margin-top: 72px;
+  }
+  .category-item {
+    margin-top: 32px;
+  }
+  .category-logo {
+    width: 68px;
+    height: 68px;
+    margin-right: 32px;
+  }
+  .category-title {
+    font-family: SF-Pro-Display-Medium;
+    font-size: 28px;
+    color: #000000;
+    line-height: 42px;
+    margin-bottom: 0;
+  }
+  .category-content {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .wrap-shield-box {
+    margin-top: 80px;
+    width: 548px;
+    height: 160px;
+    padding-left: 40px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  .shield-icon {
+    width: 80px;
+    height: 96px;
+    margin-right: 40px;
+  }
+  .shield-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .wrap-shield-first-section {
+    margin-right: 40px;
+  }
+  .shield-content {
+    font-size: 36px;
+    line-height: 54px;
+  }
+  .shield-subcontent {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .more-text {
+    color: #000000;
+    font-family: SF-Pro-Display-Regular;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .more-text:hover {
+    color: #000000;
+  }
+  .more-icon {
+    margin-left: 7px;
+  }
+  .more-gray-text {
+    color: #9C9C9C;
+    font-family: SF-Pro-Display-Regular;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .layout {
+    padding-left: 116px;
+    padding-right: 116px;
+    margin: auto;
+    font-family: SF-Pro-Display-Regular;
+    background: white;
+  }
+  .img-phone {
+    width: calc((100vh - 100px) * 358 / 720);
+    height: calc(100vh - 100px);
+    object-fit: contain;
+    margin-top: 50px;
+  }
+  .app-logo {
+    width: 121px;
+    margin-top: 80px;
+  }
+  .wallet-title {
+    font-family: SF-Pro-Display-Medium;
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 16px;
+  }
+  .wrap-app-link {
+    //margin-top: 24px;
+  }
+  .app-link{
+    width: 170px;
+    height: 50px;
+    margin-right: 16px;
+    margin-top: 24px;
+  }
+  .category-item {
+    margin-top: 24px;
+  }
+  .wrap-category {
+    margin-top: 40px;
+  }
+  .category-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 24px;
+  }
+  .category-title {
+    font-family: SF-Pro-Display-Medium;
+    font-size: 20px;
+    color: #000000;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  .category-content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .wrap-shield-box {
+    margin-top: 40px;
+    width: 441px;
+    height: 128px;
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .wrap-shield-first-section {
+    margin-right: 32px;
+  }
+  .shield-icon {
+    width: 67px;
+    height: 80px;
+    margin-right: 32px;
+  }
+  .shield-title {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .shield-content {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .shield-subcontent {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .more-text {
+    color: #000000;
+    font-family: SF-Pro-Display-Regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .more-text:hover {
+    color: #000000;
+  }
+  .more-icon {
+    margin-left: 7px;
+    width: 10px;
+    height: 11px;
+  }
+  .more-gray-text {
+    color: #9C9C9C;
+    font-family: SF-Pro-Display-Regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 0;
+  }
+}
+
 .wallet-content {
   font-family: SF-Pro-Display-Regular;
   font-weight: 400;
@@ -778,40 +1026,6 @@ input:focus {
   text-align: left;
   line-height: 27px;
   margin-top: 32px;
-  margin-bottom: 0;
-}
-
-.more-text {
-  color: #4C8BF5;
-  font-family: SF-Pro-Display-Regular;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-}
-.more-text:hover {
-  color: #4C8BF5;
-}
-
-.more-icon {
-  margin-left: 7px;
-}
-
-.wrap-category {
-}
-
-.category-title {
-  font-family: SF-Pro-Display-Medium;
-  font-size: 32px;
-  color: #000000;
-  line-height: 48px;
-  margin-bottom: 0;
-}
-
-.category-content {
-  font-family: SF-Pro-Display-Regular;
-  font-size: 18px;
-  color: #9C9C9C;
-  line-height: 27px;
   margin-bottom: 0;
 }
 
@@ -837,13 +1051,6 @@ input:focus {
   padding-right: 32px;
   border-left: 1px solid #F0F0F0;
   border-right: 1px solid #F0F0F0;
-}
-
-.img-phone {
-  margin-top: 40px;
-  width: calc(90vh * 358 / 720);
-  height: 90vh;
-  object-fit: contain;
 }
 
 
